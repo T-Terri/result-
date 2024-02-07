@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+:root{
+    
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+
+    --Lightslatebluebackground: hsl(252, 100%, 67%);
+    --Lightroyalbluebackground: hsl(241, 81%, 54%);
+    --Violetbluecircle: hsla(256, 72%, 46%, 1);
+    --Persianbluecircle: hsla(241, 72%, 46%, 0);
+
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--Paleblue);
+    margin-top: 40px;
+}
+.hero{
+    background : linear-gradient(rgba(107, 107, 245, 0.801), blue);
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  
+   
+}
+
+h4{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 20px;
+    color: var(--Lightlavender);
+}
+h1{
+    font-size: 40px;
+   
+}
+p{
+    position: relative;
+    color: var(--Lightlavender);
+}
+.dblock{
+    display: block;
+}
+
+.numbers{
+    border: 2px solid black;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    color: var(--White);
+    border: none; 
+    position: relative;
+    left: 120px;
+    background: linear-gradient(rgb(38, 38, 231), rgb(82, 82, 237));
+}
+
+h2{
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--Paleblue);
+    margin-top: 100px;
+    position: relative;
+    bottom: 60px;
+}
+.mypd{
+    position: relative;
+    bottom: 50px;
+}
+.mypm{
+    display: none;
+}
+.heroii{
+    border: 2px solid black;
+    height: 500px;
+    width: 35%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--White);
+    position: relative;
+    
+    
+}
+.mainhero{
+    display: flex;
+    place-content: center;
+}
+.color{
+    color: var(--Lightlavender);
+}
+.summary{
+    color: var(--Darkgrayblue);
+    font-size: 30px;
+    position: relative;
+    bottom: 30px;
+    margin-left: 30px;
+}
+
+.reaction{
+    display: flex;
+    gap: 80px;
+    color: var(--Lightred);
+    border: 2px solid black;
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    background-color:  rgb(248, 233, 230);
+    padding: 0px 10px;
+    position: relative;
+    bottom: 15px;
+    margin-left: 30px;
+
+}
+.reactionlogo{
+    display: flex;
+    gap: 20px;
+}
+.memory{
+    display: flex;
+    gap: 80px;
+    color: var(--Orangeyyellow);
+    border: 2px solid black;
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    background-color:  rgb(238, 238, 216);
+    padding: 0px 10px;
+    margin-left: 30px;
+    
+}
+
+.memorylogo{
+        display: flex;
+        gap: 20px;
+}
+
+.verbal{
+    display: flex;
+    gap: 90px;
+    color: var(--Greenteal);
+    border: 2px solid black;
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(236, 243, 224);
+    padding: 0px 10px;
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+}
+
+.verballogo{
+    display: flex;
+    gap: 20px;
+}
+
+.visual{
+    display: flex;
+    gap: 90px;
+    color: var(--Cobaltblue);
+    border: 2px solid black;
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 247);
+    padding: 0px 10px;
+    position: relative;
+    top: 40px;
+    margin-left: 30px;
+    
+}
+
+.visuallogo{
+    display: flex;
+    gap: 20px;
+}
+
+button{
+    position: relative;
+    top: 70px;
+    border: 1px solid black;
+    width: 85%;
+    height: 50px;
+    background-color: var(--Darkgrayblue);
+    border-radius: 10px;
+    border: none;
+    color: var(--White);
+    font-size: 20px;
+    position: relative;
+    bottom: 100px;
+    margin-left: 30px;
+}
+
+@media(max-width:600px){
+    .mainhero{
+        flex-direction: column;
+    }
+    .hero{
+        background : linear-gradient(rgba(107, 107, 245, 0.801), blue);
+        width: 100%;
+        text-align: center;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        z-index: 11111;
+        
+        
+       
+    }
+    body{
+        margin: 0;
+    }
+
+    .summary{
+        color: var(--Darkgrayblue);
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+
+    .heroii{
+        border: 2px solid black;
+        height: 600px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--White);
+        position: relative;
+        bottom: 30px;
+        margin: 0px;
+        justify-content: center;
+        
+    }
+    .mypd{
+       display: none;
+    }
+    .mypm{
+        position: relative;
+        bottom: 50px;
+        display: block;
+    }
+}
